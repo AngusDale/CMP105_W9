@@ -2,6 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "Framework/Input.h"
+#include "BallManager.h"
 #include <string>
 #include <iostream>
 
@@ -14,6 +15,8 @@ public:
 	void handleInput(float dt);
 	void update(float dt);
 	void render();
+
+	BallManager ballmanager;
 
 private:
 	// Default functions for rendering to the screen.
